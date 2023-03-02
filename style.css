@@ -1,0 +1,402 @@
+* {
+        box-sizing: border-box;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    li,
+    a {
+        margin: 0;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+
+    p {
+        line-height: 2;
+
+
+    }
+
+    li {
+        list-style: none;
+    }
+
+    body {
+        margin: 0;
+        background-color: #2e3135;
+        font-family: 'Montserrat', sans-serif;
+        color: #ffff;
+
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    .wrap {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+
+    .section {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .flex-container {
+        display: flex;
+    }
+
+    nav {
+
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 999;
+
+    }
+
+    .scroll-btn::before {
+        content: "🔝";
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        font-size: 50px;
+        border-radius: 7px;
+        z-index: 999;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .camburger {
+        position: relative;
+        display: none;
+    }
+
+    .fa-camera {
+        font-size: 2rem;
+        color: black;
+    }
+
+    .fa-headphones {
+        font-size: 4rem;
+        position: absolute;
+        left: -16px;
+        top: -30px;
+        color: black;
+    }
+
+
+
+    ul li:not(:last-child) {
+        margin-right: 10px;
+    }
+
+
+
+
+
+    .banner {
+        position: relative;
+        height: 100vh;
+        background: linear-gradient(90deg, #00000080, #00000080), url("./images/header-bg.jpg") no-repeat center/cover fixed;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: wait;
+
+
+
+
+    }
+
+    .inner {
+
+        flex: 0 1 auto;
+
+    }
+
+    .inner-text {
+        max-width: 500px;
+    }
+
+
+
+    .inner h1 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+
+
+
+
+    .banner .inner p:not(:first-child) {
+        max-width: 500px;
+        margin: 0 auto;
+
+    }
+
+    .btn {
+        margin-top: 2rem;
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 600;
+        outline: 1px solid;
+        padding: 10px;
+        border-radius: 13px;
+    }
+
+    
+
+
+
+    .about,
+    .cards {
+
+        margin-right: -30px;
+    }
+
+    @media(max-width: 768px) {
+
+        p{
+            line-height: 1;
+        }
+
+         .mobile-width{
+            width: 100%;
+            height: 70px;
+        }
+        .logo::before{
+            content: "";
+            background: url("./images/logo-dark.png") center no-repeat;
+            display: block;
+            width: 100px;
+            height: 69px;
+            background-size: 69px 25px;
+            
+        }
+
+
+        .logo{
+            width: fit-content;
+            left: 0;
+            position: absolute;
+        }
+    
+
+        
+
+        nav {
+            
+            top:0;
+            background: white;
+            justify-content: space-around;
+            
+        }
+
+        .img-logo{
+            display: none;
+        }
+
+        .camburger {
+            display: block;
+            top: 33px;
+            right: 30px;
+            position: absolute;
+        }
+
+        .banner{
+            background-position: 50%;
+            background-attachment: scroll;         
+        }
+
+        
+
+        .about,
+        .cards {
+            flex-wrap: wrap;
+
+        }
+
+        .menu {
+            display: none;
+        }
+
+        .cards .wrap-33 {
+            flex: 0 0 100%;
+        }
+
+        .wrap-33:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+
+    }
+
+    @media(min-width:768px) {
+
+       
+
+        .inner-content,
+        .card-text {
+            font-size: 69%;
+        }
+
+
+    }
+
+    @media(max-width:1300px) {
+        .minus-1 {
+            display: none;
+        }
+    }
+
+    @media(max-width:1262px) {
+        .minus-2 {
+            display: none;
+        }
+    }
+
+    @media(max-width:1150px) {
+        .minus-3 {
+            display: none;
+        }
+    }
+
+    @media(max-width:1000px) {
+        .minus-4 {
+            display: none;
+        }
+    }
+
+    @media(max-width:880px) {
+        .minus-5 {
+            display: none;
+        }
+    }
+
+    @media(max-width:705px) {
+
+        .inner h1 {
+
+            font-size: 23px;
+        }
+    }
+
+    @media(max-width:265px) {
+        .inner h1 {
+
+            font-size: 69%;
+        }
+    }
+
+
+
+    .about-img {
+
+        border: 5px ridge #696969;
+    }
+
+    .wrap-50 {
+        flex: 0 1 auto;
+    }
+
+    .inner-content:not(.about-img),
+    .card-inner {
+        margin-right: 30px;
+    }
+
+    .icons a {
+        margin-right: 10px;
+    }
+
+    .icons>* i {
+        outline: 1px solid #fff;
+        border-radius: 100%;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+
+
+    }
+
+    .blog-section {
+        background-color: #26282b;
+    }
+
+    .blog-header {
+        text-align: center;
+    }
+
+    .card-img {
+        width: 100%;
+
+
+    }
+
+
+
+    .border-radius {
+        border-radius: 5px;
+    }
+
+    .padding-card {
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+
+
+    .wrap-33 {
+        flex: 0 0 33%;
+    }
+
+    .btn-card::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .card-inner {
+        background-color: #2e3135;
+        box-shadow: 0 0 13px -3px black;
+        position: relative;
+    }
+
+    .card-text p span {
+        color: #696969;
+    }
+
+    .card-inner:hover {
+        box-shadow: 0 0 0 1px black;
+    }
+
+    footer .icons {
+        text-align: center;
+    }
+
+    .menu ul li:nth-last-child(1) {
+        background-color: red;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
